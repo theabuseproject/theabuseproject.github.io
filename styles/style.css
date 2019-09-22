@@ -936,18 +936,6 @@ p {
   -ms-user-select: none;
 }
 
-img {
-  background-color: white;
-}
-
-img, #pbar-container, #sbar-container {
-  cursor: pointer;
-}
-
-img:hover {
-  background-color: #001582;
-}
-
 #vid-container {
   width: 640px;
   height: 360px;

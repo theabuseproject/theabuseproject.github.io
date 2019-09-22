@@ -126,8 +126,8 @@ $('[data-github]').each(function () {
 // FOUNDERS
 
 var peopleList = [
-  "https://goj2.com/wp-content/uploads/2019/01/zacSlider.png",
-  "https://avatars3.githubusercontent.com/u/5800726?s=460&v=4"
+  "https://raw.githubusercontent.com/theabuseproject/theabuseproject.github.io/master/static/Piyush_Raj.png",
+  ""
 ]
 var indexLength = peopleList.length;
 var currIndex = 0;
@@ -174,17 +174,17 @@ window.addEventListener('load', function(){
 function playOnPause(){
   if(video.paused){
     video.play();
-    playButton.src = 'https://github.com/cjbeowulf/codepenimgs/blob/master/playerimgs/pause.png?raw=true';
+    playButton.src = 'https://raw.githubusercontent.com/theabuseproject/theabuseproject.github.io/master/static/pause.png';
     update = setInterval(updatePlayer, 30);
 
     playScreen.style.display = 'none';
   } else{
     video.pause();
-    playButton.src = 'https://github.com/cjbeowulf/codepenimgs/blob/master/playerimgs/play.png?raw=true'
+    playButton.src = 'https://raw.githubusercontent.com/theabuseproject/theabuseproject.github.io/master/static/play.png'
     window.clearInterval(update);
 
     playScreen.style.display = 'block';
-    screenButton.src = 'https://github.com/cjbeowulf/codepenimgs/blob/master/playerimgs/play.png?raw=true';
+    screenButton.src = 'https://raw.githubusercontent.com/theabuseproject/theabuseproject.github.io/master/static/play.png';
   }
 }
 
@@ -194,13 +194,13 @@ function updatePlayer(){
   timeField.innerHTML = getFormattedTime();
   if(video.ended){
     window.clearInterval(update);
-    playButton.src = 'https://github.com/cjbeowulf/codepenimgs/blob/master/playerimgs/replay.png?raw=true';
+    playButton.src = 'https://raw.githubusercontent.com/theabuseproject/theabuseproject.github.io/master/static/replay.png';
 
     playScreen.style.display = 'block';
-    screenButton.src = 'https://github.com/cjbeowulf/codepenimgs/blob/master/playerimgs/replay.png?raw=true';
+    screenButton.src = 'https://raw.githubusercontent.com/theabuseproject/theabuseproject.github.io/master/static/replay.png';
   } else if(video.paused){
-    playButton.src = 'https://github.com/cjbeowulf/codepenimgs/blob/master/playerimgs/play.png?raw=true';
-    screenButton.src = 'https://github.com/cjbeowulf/codepenimgs/blob/master/playerimgs/play.png?raw=true'
+    playButton.src = 'https://raw.githubusercontent.com/theabuseproject/theabuseproject.github.io/master/static/play.png';
+    screenButton.src = 'https://raw.githubusercontent.com/theabuseproject/theabuseproject.github.io/master/static/play.png'
   }
 }
 
@@ -231,11 +231,11 @@ function getFormattedTime(){
 function muteOrUnmute(){
   if(!video.muted){
     video.muted = true;
-    soundButton.src  = 'https://github.com/cjbeowulf/codepenimgs/blob/master/playerimgs/mute.png?raw=true'
+    soundButton.src  = 'https://raw.githubusercontent.com/theabuseproject/theabuseproject.github.io/master/static/mute.png'
     sbar.style.display = 'none';
   } else{
     video.muted = false;
-    soundButton.src = 'https://github.com/cjbeowulf/codepenimgs/blob/master/playerimgs/sound.png?raw=true'
+    soundButton.src = 'https://raw.githubusercontent.com/theabuseproject/theabuseproject.github.io/master/static/sound.png'
     sbar.style.display = 'block';
   }
 }
@@ -248,7 +248,7 @@ function updateVolume(ev){
   video.volume = (mouseX/width);
   sbar.style.width = (mouseX/width)*100 + '%';
   video.muted = false;
-  soundButton.src = 'https://github.com/cjbeowulf/codepenimgs/blob/master/playerimgs/sound.png?raw=true'
+  soundButton.src = 'https://raw.githubusercontent.com/theabuseproject/theabuseproject.github.io/master/static/sound.png'
   sbar.style.display = 'block';
 }
 
