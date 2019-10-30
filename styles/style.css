@@ -9,7 +9,7 @@ html, body{
 }
 
 body{
-background-image: url("./static/bitmap.png");
+background-image: url("https://raw.githubusercontent.com/theabuseproject/theabuseproject.github.io/master/static/bitmap.png");
   background-size:cover;
   background-repeat:no-repeat;
   background-position: center;
