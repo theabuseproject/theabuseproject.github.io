@@ -400,10 +400,8 @@ right: 25px;
     margin-bottom: 30px;
 }
 
-.career-img {
-    position: absolute;
+.footer-img {
     bottom: 0;
-    width: 65%;
     z-index: 0;
     left: 60%;
 }
