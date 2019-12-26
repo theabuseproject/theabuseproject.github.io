@@ -40,9 +40,34 @@
 <body>
 <header class="header">
   <div class="container header__container">
-    <div class="header__logo"><img class="header__img" src="static/logo_64x64.png">
-      <h1 class="header__title"><span class="header__light"></span></h1>
+
+
+
+  <div class="nav navbar-fixed-top">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+      <img class="justify-content-center" style="height:42px" src="static/logo_64x64.png">
     </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+
+  <div class="nav-links">
+    <a href="#team">Team</a>
+    <a href="#vision">Vision</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#news">News</a>
+    <a href="#join-us">Join Us!</a>
+  </div>
+</div>
+
+
   </div>
 </header>
 <div class="sect sect--padding-top">
@@ -82,7 +107,7 @@
   </div>
 </div>
 <!--START TEAM SECTION-->
-<div class="sect sect--white">
+<div id="team" class="sect sect--white">
   <div class="container">
     <div class="row">
       <h1 class="row__title">
@@ -134,7 +159,7 @@
   </div>
 </div>
 <!--END TEAM SECTION-->
-<div class="sect sect--white">
+<div id="vision" class="sect sect--white">
   <div class="box">
     <div class="container">
       <div class="row">
@@ -203,7 +228,7 @@
   </div>
 </div>
 
-<div class="sect sect--white">
+<div id="roadmap" class="sect sect--white">
   <div class="container">
     <div class="row">
       <h1 class="row__title">
@@ -266,7 +291,7 @@
   </div>
 </div>
 
-<div class="sect sect--white">
+<div id="news" class="sect sect--white">
 <div class="container">
   <div class="row">
    <h1 class="row__title">
@@ -302,7 +327,7 @@
 </div>
 </div>
 
-<div class="sect sect--violet">
+<div id="join-us" class="sect sect--violet">
   <img align="right" src="static/footer-profanity.svg" class="footer-img">
   <div class="container">
     <div class="row">
